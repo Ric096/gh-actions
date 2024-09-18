@@ -1,0 +1,18 @@
+# Nombre del workflow
+name: Hola mundo 
+
+# Eventos que desencadenan este workflow ( en este caso cuando se haga un push en el repositorio )
+on: [push]
+
+# Tareas que se van a ejecutar
+jobs:
+# Nombre de la tarea
+  Primer-Job:
+    # Ejecuta la tarea en el siguiente sistema operativo
+    runs-on: ubuntu-latest
+    # Pasos que se van a ejecutar
+    steps:
+      # Nombre del paso
+      - name: Hello World
+        # Ejecuta el comando que se va a ejecutar
+        run: echo "Hola Mundo"
